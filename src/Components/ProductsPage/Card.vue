@@ -6,7 +6,7 @@
             <img class="card-img-top" :src="item.img" alt="Card image cap">
             <div class="overlay">
               <button type="button" class="btn btn-outline-secondary btn-lg" @click="addtoCart(item)">Add to Cart</button>
-              <router-link to="/Info"><button type="button" class="btn btn-outline-secondary btn-lg" @click="sendInfo(item)">Info</button></router-link>
+              <router-link to="/Info"><button type="button" class="btn btn-outline-secondary btn-lg" @click="">Info</button></router-link>
             </div>
             <div class="card-body">
               <h5>Title</h5>
