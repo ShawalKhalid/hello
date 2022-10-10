@@ -18,10 +18,17 @@
         <router-link class="pl-2" to="/"> <h3>The Book Room</h3> <br>
         </router-link>
 
-         <router-link class="px-5" to="/products"> Categories </router-link>
-         <router-link to="/">      About Us </router-link>
-         <router-link class="px-5" to="/"> Order Now </router-link>
-
+        
+        <div class="dropdown">
+          <a class="btn btn-light dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories
+            <span style="color:#f2be00;">{{ sortButton }}</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="/products" @click="sortDate">New Arrivals</a>
+            <a class="dropdown-item" href="/products" @click="sortPrice" >Popular Books</a>
+            <a class="dropdown-item" href="/products" @click="sortTrend">Most Sold</a>
+          </div>
+        </div>
 
       </span>
 
